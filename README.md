@@ -3,14 +3,33 @@
 # Enterprise-Level Git Workflow Assignment
 
 ## 📌 Commands Used
-Here is a log of the core Git commands utilized to complete this project:
+Here is a log of the core Git commands utilized to complete this specific workflow:
+
+**Repository & Branch Initialization:**
+* `git config --global user.name "Khalid"` - Configured local Git profile.
 * `git init` - Initialized the local repository.
-* `git branch <branch-name>` - Created feature and bugfix branches.
-* `git switch <branch-name>` - Navigated between branches.
-* `git merge <branch-name>` - Integrated changes using the fast-forward merge strategy.
-* `git rebase <base-branch>` - Reapplied commits on top of another base tip for a linear history.
-* `git rebase -i HEAD~5` - Initiated an interactive rebase to squash and reword commits.
-* `git push -u origin <branch-name>` - Pushed local branches to the remote GitHub repository.
+* `git branch -M main` - Set the default branch name.
+* `git branch <branch-name>` - Created the `develop`, `feature/login`, `feature/payment`, and `bugfix/login-error` branches.
+* `git switch -c feature/profile` - Created and immediately switched to the profile feature branch.
+
+**Staging & Committing:**
+* `git add <file>` - Staged newly created and modified files.
+* `git commit -m "<message>"` - Created standard commits for features and documentation.
+
+**Merging & Rebasing (Integration):**
+* `git merge feature/login` - Integrated the login feature into `develop` using a fast-forward merge strategy.
+* `git rebase develop` - Rebased the `feature/payment` branch onto `develop` to maintain a clean, linear history before integrating.
+
+**History Manipulation:**
+* `git config --global core.editor "code --wait"` - Set VS Code as the default editor for interactive Git commands.
+* `git rebase -i HEAD~5` - Initiated an interactive rebase to squash 5 "work-in-progress" commits into a single feature commit.
+* `git commit --amend -m "<message>"` - Overwrote the most recent commit message to finalize the reword process.
+* `git rebase --quit` - Safely aborted and cleared a locked rebase state.
+
+**Remote Repository (GitHub):**
+* `git remote add origin <url>` - Linked the local repository to the remote GitHub repository.
+* `git push -u origin main` - Pushed the main branch and established upstream tracking.
+* `git push origin <branches>` - Pushed all remaining feature, develop, and bugfix branches to the remote.
 
 ## 🧠 Concepts Explained
 

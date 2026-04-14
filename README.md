@@ -40,3 +40,9 @@ Here is a log of the core Git commands utilized to complete this specific workfl
 ### Squash & Reword
 * **Squash:** Squashing is a history manipulation technique that condenses multiple small, messy, or "work-in-progress" commits into a single, cohesive commit to keep the main branch readable.
 * **Reword:** Rewording allows you to modify the text of a previous commit message without changing the underlying code, ensuring the final project history is professional and descriptive.
+
+## 📸 Screenshots
+<img width="852" height="168" alt="Screenshot 2026-04-15 082601" src="https://github.com/user-attachments/assets/a744c74b-7395-4dab-b632-c1a09678ab64" />
+
+<img width="1391" height="925" alt="Screenshot 2026-04-15 082711" src="https://github.com/user-attachments/assets/f5b95a73-8c63-4e00-94f5-30224c86f4d5" />
+
